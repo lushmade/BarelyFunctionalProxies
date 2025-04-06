@@ -33,7 +33,6 @@ body {
     width: 672px;
     background-size: contain;
     background-repeat: no-repeat;
-    filter: opacity(60%);
 }
 
 
@@ -41,7 +40,7 @@ body {
 
 .overlay {
     position: absolute;
-    color: #666666;
+    color: black;
 }
 
 #card-ink {
@@ -168,7 +167,6 @@ body {
     width: 34px;
     height: 56px;
     margin: 2px 4px;
-    filter: opacity(60%);
 }
 
 /* Card Footer */
@@ -187,7 +185,6 @@ body {
 }
 #card-rarity img {
     width: 36px;
-    filter: opacity(60%);
 }
 
 #card-artist {
