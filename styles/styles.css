@@ -1,0 +1,209 @@
+#card-names-input {
+    width: 200px;
+    margin-left: 20px;
+}
+
+/* Card Structure */
+
+body {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+#card {
+    width: 372px;
+    height: 520px;
+    margin: 20px;
+    border: 1px black solid;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#card-overlay {
+    width: 336px;
+    height: 484px;
+    padding: 18px;
+}
+/* Card Art */
+
+#card-art {
+    position: absolute;
+    top: 70px;
+    left: 38px;
+    height: 254px;
+    width: 336px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: opacity(60%);
+}
+
+
+/* Card Overlay */
+
+.overlay {
+    position: absolute;
+    color: #666666;
+}
+
+#card-ink {
+    position: relative;
+    width: 28px;
+    left: 4px;
+    text-align: center;
+    font-size: 26px;
+}
+
+/* Card Info Box */
+
+#card-info-box {
+    position: absolute;
+    width: 324px;
+    height: 41px;
+    top: 324px;
+    padding: 6px;
+}
+
+#card-title {
+    font-size: 22px;
+    width: 240px;
+    padding: 0;
+    margin: 0;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+#card-subtitle {
+    font-size: 12px;
+    margin-top: 24px;
+    width: 240px;
+    text-transform: uppercase;
+}
+
+#card-strength, #card-willpower {
+    font-size: 26px;
+}
+
+#card-strength {
+    top: 6px;
+    left: 256px;
+    width: 32px;
+    text-align: center;
+}
+
+#card-willpower {
+    top: 7px;
+    left: 299px;
+    text-align: center;
+    width: 26px;
+}
+
+/* Card Info Subbox */
+
+#card-info-subbox {
+    position: absolute;
+    width: 324px;
+    height: 18px;
+    top: 377px;
+    padding: 0 6px;
+}
+
+#card-keywords {
+    font-size: 11px;
+    width: 336px;
+    text-align: center;
+}
+
+.ink-color {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+#card-ink-one {
+    background-color: dimgrey;
+}
+
+#card-ink-two {
+    margin-left: 16px;
+    background-color: red;
+}
+
+/* Card Info Main */
+
+#card-info-main {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 324px;
+    height: 124px;
+    top: 394px;
+    padding: 6px;
+}
+
+#card-text {
+    position: relative;
+    flex-basis: 90%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 12px;
+}
+
+#card-text p {
+    margin: 4px 0;
+}
+
+#card-text p img {
+    height: 12px;
+}
+
+#card-lore {
+    position: relative;
+    flex-basis: 8%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.lore-symbol {
+    background-image: url("../assets/Lore.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17px;
+    height: 28px;
+    margin: 1px 2px;
+    filter: opacity(60%);
+}
+
+/* Card Footer */
+
+#card-info-footer {
+    position: absolute;
+    width: 336px;
+    height: 40px;
+    top: 530px;
+}
+
+#card-rarity {
+    width: 336px;
+    text-align: center;
+    margin-top: 6px;
+}
+#card-rarity img {
+    width: 18px;
+    filter: opacity(60%);
+}
+
+#card-artist {
+    font-size: 9px;
+    width: 100px;
+    top: 3px;
+    left: 44px;
+}
+
+#card-set-info {
+    font-size: 9px;
+    width: 100px;
+    top: 14px;
+    left: 0;
+}

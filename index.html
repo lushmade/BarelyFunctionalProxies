@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Barely Functional Proxies</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./data/cards.js"></script>
+</head>
+<body>
+  <input list="card-names" id="card-names-input" name="card">
+  <datalist id="card-names">
+  </datalist>
+  <div id="card">
+    <div id="card-art" class="overlay"></div>
+    <div id="card-overlay">
+      <div id="card-ink" class="overlay"></div>
+      <div id="card-info-box">
+        <div id="card-title" class="overlay"></div>
+        <div id="card-subtitle" class="overlay"></div>
+        <div id="card-strength" class="overlay"></div>
+        <div id="card-willpower" class="overlay"></div>
+      </div>
+      <div id="card-info-subbox">
+        <div id="card-ink-one" class="overlay ink-color"></div>
+        <div id="card-ink-two" class="overlay ink-color"></div>
+        <div id="card-keywords" class="overlay"></div>
+      </div>
+      <div id="card-info-main">
+        <div id="card-text" class="overlay"></div>
+        <div id="card-lore">
+        </div>
+      </div>
+      <div id="card-info-footer">
+        <div id="card-rarity" class="overlay"></div>
+        <div id="card-artist" class="overlay"></div>
+        <div id="card-set-info" class="overlay"></div>
+      </div>
+    </div>
+  </div>
+  <script src="./src/scripts.js"></script>
+</body>
+</html>
