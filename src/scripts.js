@@ -112,7 +112,24 @@ function colorForInk(ink) {
   }
 }
 
+function makeAndDownload() {
+  const card = document.getElementById("card");
+  html2canvas(card, {
+    useCORS: true,
+    logging: true
+  }).then(function(canvas) {
+    const imageData = canvas.toDataURL('image/png');
+    const link = document.createElement("a");
+    link.href = imageData;
+    link.download = $("#card-names-input").val()+".png";
+    link.click();
+  })
+}
+
 document.getElementById("card-names-input")
   .addEventListener("change", datalistChanged);
+
+document.getElementById("download")
+  .addEventListener("click", makeAndDownload);
 
 fillDropdown()

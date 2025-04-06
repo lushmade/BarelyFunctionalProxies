@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <title>Barely Functional Proxies</title>
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" href="./assets/favicon.png">
+  <script src="./src/html2canvas.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./data/cards.js"></script>
 </head>
 <body>
   <input list="card-names" id="card-names-input" name="card">
-  <datalist id="card-names">
-  </datalist>
+  <datalist id="card-names"></datalist>
+  <button id="download">Download</button>
   <div id="card">
     <div id="card-art" class="overlay"></div>
     <div id="card-overlay">
