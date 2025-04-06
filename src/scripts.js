@@ -75,20 +75,20 @@ async function fillCard(setno, cardno) {
     let textlines = card.text.split("\n")
     $("#card-text").empty()
     for (let textline of textlines) {
-      let text = textline.replace("{I}", "<img src='../assets/Ink.png'/>")
-      text = text.replace("{S}", "<img src='../assets/Strength.png'/>")
-      text = text.replace("{W}", "<img src='../assets/Willpower.png'/>")
+      let text = textline.replace("{I}", "<img src='./assets/Ink.png'/>")
+      text = text.replace("{S}", "<img src='./assets/Strength.png'/>")
+      text = text.replace("{W}", "<img src='./assets/Willpower.png'/>")
       $("#card-text").append(`<p>${text}</p>`);
     }
     $("#card-rarity").empty()
     $("#card-rarity").append(`<img src='../assets/Rarity/${card.rarity}.png'/>`)
     $("#card-artist").text(card.illustrators.join(" • "))
     $("#card-set-info").text(`${card.collector_number}/204 • Set ${card.set.code} `);
-    $("#card-art").css('background-image', `url("../assets/CardArt/0${card.set.code}_${card.collector_number}.png`)
+    $("#card-art").css('background-image', `url("./assets/CardArt/0${card.set.code}_${card.collector_number}.png`)
     if (card.inkwell) {
-      $("#card").css('background-image', "url('../assets/Background/inkable_lorcana_drawn.jpg')")
+      $("#card").css('background-image', "url('./assets/Background/inkable_lorcana_drawn.jpg')")
     } else {
-      $("#card").css('background-image', "url('../assets/Background/uninkable_lorcana_drawn.jpg')")
+      $("#card").css('background-image', "url('./assets/Background/uninkable_lorcana_drawn.jpg')")
     }
     $("#card-lore").empty();
     for (var i=0; i<card.lore; i++) {
